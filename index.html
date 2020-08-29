@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pizzowy Kalkulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../lib/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<script src="jquery-3.1.1.min.js"></script>
+<div class="jumbotron text-center">
+  <h1>Pizzowy Kalkulator</h1>
+</div>
+
+
+
+
+<div class="container">
+	<div class="pizzacontainer">
+	
+	<div id="pizza-fadeIn">
+	
+	<div align="center" id="pizza1" onclick="ciekawostka()">
+	<img id="piz" src="p.png" alt="" width="100px" height="123px"
+	style="position: relative; left: 10px;">
+  
+	<img id="piz2" src="p.png" alt="" width="100px" height="123px"
+	style="position: relative; margin-left: 90% display:flex">
+	</div></div>
+	
+	</div>
+
+    <script type= "text/javascript" src="skrypt_animacje.js">
+	</script>
+	<br><br>
+	
+  <div class="oknoglowne">
+    <div class="parametry">
+		<div class="napisy text-center">PARAMETRY:<br></div>
+			
+			<div class="curved-box text-center -sm-4"><br><br>
+				<div class="parametry1">
+			Nazwa pierwszej pizzy: <select id="pizza1_nazwa">
+			<option value="Salami">Salami</option>
+			<option value="Pepperoni">Pepperoni</option>
+			<option value="Margharita">Margharita</option>
+			<option value="Cipolla">Cipolla</option>
+			<option value="Rzeźnicka">Rzeźnicka</option>
+			<option value="Kebab">Kebab</option>
+			<option value="Gyros">Gyros</option>
+			<option value="Carbonara">Carbonara</option>
+			<option value="Hawajska">Hawajska</option>
+			<option value="Fungi">Fungi</option>
+			<option value="Toscana">Toscana</option>
+			<option value="Speciale">Speciale</option>
+			<option value="Frutti Di Mare">Frutti Di Mare</option>
+			<option value="Wegańska">Wegańska</option>
+			<option value="Palermo">Palermo</option>
+			<option value="Domowa">Domowa</option>
+			<option value="Boss">Boss</option>
+			<option value="Prosciutto">Prosciutto</option>
+			<option value="Mexicana">Mexicana</option>
+			<option value="Trzy Sery">Trzy Sery</option>
+			<option value="Spinaci">Spinaci</option>
+			<option value="Kurczak">Kurczak</option>
+			<option value="Capri">Capri</option>
+			<option value="Grecka">Grecka</option>
+			<option value="Scampi">Scampi</option>
+			<option value="Parmeńska">Parmeńska</option>
+			<option value="Diabelska">Diabelska</option>
+			<option value="Tuńczyk">Tuńczyk</option>
+			<option value="Wiejska">Wiejska</option>
+									</select><br>
+																			
+		Średnica pierwszej pizzy:		<input type="text " id="srednica1" size="5" placeholder="Średnica"/> cm<br>
+		Cena pierwszej pizzy:				<input type="text" id="cena1" size="8" placeholder="Cena"/> PLN<br>
+		Czy dzielić ją na dwoje?				  <input type="checkbox" id="dzielic1"/><br>
+				</div> 
+					<div class="parametry2">
+			Nazwa drugiej pizzy: <select id="pizza2_nazwa">
+			<option value="Salami">Salami</option>
+			<option value="Pepperoni">Pepperoni</option>
+			<option value="Margharita">Margharita</option>
+			<option value="Cipolla">Cipolla</option>
+			<option value="Rzeźnicka">Rzeźnicka</option>
+			<option value="Kebab">Kebab</option>
+			<option value="Gyros">Gyros</option>
+			<option value="Carbonara">Carbonara</option>
+			<option value="Hawajska">Hawajska</option>
+			<option value="Fungi">Fungi</option>
+			<option value="Toscana">Toscana</option>
+			<option value="Speciale">Speciale</option>
+			<option value="Frutti Di Mare">Frutti Di Mare</option>
+			<option value="Wegańska">Wegańska</option>
+			<option value="Palermo">Palermo</option>
+			<option value="Domowa">Domowa</option>
+			<option value="Boss">Boss</option>
+			<option value="Prosciutto">Prosciutto</option>
+			<option value="Mexicana">Mexicana</option>
+			<option value="Trzy Sery">Trzy Sery</option>
+			<option value="Spinaci">Spinaci</option>
+			<option value="Kurczak">Kurczak</option>
+			<option value="Capri">Capri</option>
+			<option value="Grecka">Grecka</option>
+			<option value="Scampi">Scampi</option>
+			<option value="Parmeńska">Parmeńska</option>
+			<option value="Diabelska">Diabelska</option>
+			<option value="Tuńczyk">Tuńczyk</option>
+											</select><br>
+	  
+		Średnica drugiej pizzy:		<input type="text" id="srednica2" size="5" placeholder="Średnica"/> cm<br>
+		Cena drugiej pizzy:			   <input type="text" id="cena2" size="8" placeholder="Cena"/> PLN<br>
+		Czy dzielić ją na dwoje?	 		 <input type="checkbox" id="dzielic2"/><br>
+					
+					</div>
+			
+			<input type="button" class="button" value="Oblicz" id="b"/>
+				
+			</div>
+	
+			<script type="text/javascript" src="skrypt2.js"></script>
+			<script type="text/javascript" src="skrypt1.js"></script>
+</div>
+    <div class="wynik text-center -sm-4">
+     <div class="napisy">WYNIKI:</div>
+		<div id="wynik-fadeIn">
+		<br>
+			<div class="wynik1"  onclick="wynik1()">
+			
+				<div class="srednica1pizzy"></div>
+					<div class="cena1pizzy"></div>
+						<div class="pizza6_1div"></div>
+			</div>
+				
+				<div class="wynik2">
+				
+					<div class="srednica2pizzy"></div>
+						<div class="cena2pizzy"></div>
+							<div class="pizza6_2div"></div>
+					
+				</div>
+				<script>			
+				$(document).ready(function(){
+				$(".wynik1").hover(function(){
+				$(this).css("background-color", "#e8e8e8");
+					}, function(){
+				$(this).css("background-color", "#ffffff");//after changing color
+				});
+				});
+				
+				$(document).ready(function(){
+				$(".wynik2").hover(function(){
+				$(this).css("background-color", "#e8e8e8");
+					}, function(){
+				$(this).css("background-color", "#ffffff");//after changing color
+				});
+				});
+				</script>
+		</div>
+    </div>
+ 
+ 
+ 
+    <div class="wnioski text-center -sm-4">
+      <div class="napisy">WNIOSKI</div>      
+		<div id="wniosek-fadeIn">
+		
+			<div class="plncontainer">
+			
+				<div class="plncm2_1"></div>
+				<div class="plncm2_2"></div>
+				
+			</div>
+			
+				<div class="oplaca1"></div>
+					<div class="pizza1nazwa"></div>
+						<div class="oplaca1_2"></div>
+				
+				<div class="oplaca2"></div>
+					<div class="pizza2nazwa"></div>
+							<div class="oplaca2_2"></div>
+							
+				<input type="button" class="button_red" value="Przeładuj" id="refresh"/>
+				
+		</div>
+				
+				<div id="hawajskaout"></div>
+				
+				<script>
+				refresh.onclick=function refresh_function() {
+				location.reload();
+				}
+				</script>	
+				
+				
+				
+				
+		</div>
+    </div>
+  </div>
+   
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+<div class="beta"> Wersja 1.3_1 beta / Pizzowy Kalkulator &copy 2017 </div>
+
+
+
+</div>
+
+	
+
+
+
+
+ 
+</body>
+</html>
